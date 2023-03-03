@@ -123,3 +123,17 @@ button {
   border-radius: var(--border-radius-round);
   transition: scale 33ms ease-in-out;
 }
+
+div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  margin-top: 20px;
+  margin-inline-start: 20px;
+}
+
+.browse {
+  margin-inline-start: 20px;
+  padding-top: 20px;
+}

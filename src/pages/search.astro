@@ -1,0 +1,102 @@
+---
+import "../styles/global.css";
+import Nav from "../components/Nav.astro";
+import TopBar from "../components/TopBar.astro";
+import Footer from "../components/Footer.astro";
+import PlaylistCard from "../components/PlaylistCard.astro";
+import Shelf from "../components/Shelf.astro";
+import SearchCard from "../components/SearchCard.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Home</title>
+  </head>
+  <body>
+    <Nav />
+    <TopBar />
+    <main>
+        <h1 class="browse">Browse all</h1>
+        <div>
+        <SearchCard
+        title="Podcasts"
+        />
+                <SearchCard
+        title="Made For You"
+        />
+                <SearchCard
+        title="Charts"
+        />
+                <SearchCard
+        title="New Releases"
+        />
+                <SearchCard
+        title="Live Events"
+        />
+                <SearchCard
+        title="Podcasts"
+        />
+                <SearchCard
+        title="Made For You"
+        />
+                <SearchCard
+        title="Charts"
+        />
+                <SearchCard
+        title="New Releases"
+        />
+                <SearchCard
+        title="Live Events"
+        />
+                <SearchCard
+        title="Podcasts"
+        />
+                <SearchCard
+        title="Made For You"
+        />
+                <SearchCard
+        title="Charts"
+        />
+                <SearchCard
+        title="New Releases"
+        />
+                <SearchCard
+        title="Live Events"
+        />
+    
+</div>
+    </main>
+    <Footer />
+  </body>
+</html>
+
+<style>
+  body {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "nav topbar"
+      "nav main"
+      "footer footer";
+    height: 100%;
+  }
+  :global(main) {
+    grid-area: main;
+  }
+  :global(nav) {
+    grid-area: nav;
+  }
+  :global(.topbar) {
+    grid-area: topbar;
+  }
+  :global(footer) {
+    grid-area: footer;
+  }
+
+
+</style>
